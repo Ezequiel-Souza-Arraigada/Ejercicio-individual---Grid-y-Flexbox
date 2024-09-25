@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery div {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 300px; 
+    display: flex;
+    align-items: flex-end; 
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px;
+    display: block;
+}
+
+.gallery p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+    font-size: 1.1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.gallery div:hover p {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+    position: relative;
+    clear: both;
+}
